@@ -1,0 +1,109 @@
+section header {
+    border-top: solid 1px var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span)
+}
+
+#feactured {
+    grid-area: feactured;
+    img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    .card {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden; /* overflow significa transbordamento e hidden é esconder tudo que transbordar  */
+    
+       &::before {  /* necessario colocar & comercial dentro de uma tag para realziar as funções dentro da mesma */
+            content: ""; /* precisa colocar o conteudo vazio para fazer o sombreamento  */
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            top: 50%;
+            background:linear-gradient(   /* função nova do background "linear - gradient = degrade de yum ponto para o outro" */
+                /* primeiro a angulação que eu quero ( deg = degreas significa graus em ingles*/ 180deg,
+                /* primeira cor que eu quero no caso do transparente e a porcentagem em que ela começa*/ transparent 0%,
+                /* depois a segunda cor e a porcentagem em que ela vai ficar no final*/ #020617 100%
+        
+            );
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+            &:has(.text-lg) {
+                padding: 12px;
+            }
+    
+            h2 {
+                margin-top: 8px;
+            }
+        }
+            
+    }
+}
+
+#weekly {
+    grid-area: weekly;
+    img {
+        height: 160px;
+    }
+
+    header a {
+        justify-self: end;
+    }
+
+    &>div {
+        grid-template-columns: repeat(4, 292px);
+    }
+
+    figure {
+        position: relative;
+
+        .content-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        p {
+            margin-top: 10px;
+            font: var(--h2);
+
+        }
+    }
+}
+
+#ai {
+    grid-area: ai;
+    header a {
+        justify-self: end;
+    }
+    img {
+        width: 176px;
+    }
+    h3 {
+        margin-block: 8px 4px;
+    }
+}
+
+#more {
+    margin-top: 32px;
+    h3 {
+        margin-top: 8px;
+    }
+
+    header a {
+        justify-self: end;
+    }
+    img {
+        width: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+
+aside {
+    grid-area: aside;
+}

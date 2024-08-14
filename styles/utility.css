@@ -1,0 +1,54 @@
+
+/* ********************************************************** */
+/* classe utilitaria ela ira fazer apenas uma coisa  */
+/* utility first (header) */
+.grid {
+    display: grid;
+  }
+.grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+.grid-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap16 {
+    gap: 16px;
+}
+.gap-32 {
+  gap: 32px;
+}
+  /* ********************************************************** */
+
+  /* ultility second (global-fonts) */
+.text-2xl {
+  font: var(--h1);
+}
+.text-xl {
+  font: var(--h2);
+}
+.text-lg {
+  font: var(--h3);
+}
+.text-sm{
+  font: var(--text-sm);
+}
+/* ********************************************************** */
+
+/* ultility tree (content tag span) */
+.content-tag {
+  display: inline-block;  /* deixar o display em inline block para manter o tamanho do texto */
+  padding: 4px 8px; /* usar somente com display inline block porque ele faz o calculo extato  */
+  border-radius: 4px;
+  font-size: 10px;
+  line-height:1.2;
+  font-weight: 500;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+ background-color: var(--brand-color-dark);
+ color: var(--text-color-primary);
+ box-shadow: 0px 4px 16px #020617; /* sombra da caixa  */
+
+}
