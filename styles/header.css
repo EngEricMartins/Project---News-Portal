@@ -20,3 +20,15 @@
     font: var(--text-span);
     justify-content: space-between;
 }
+
+@media (width <= 31.25em) {
+    header {
+        & #logo {
+            width: 6.25rem;
+            height: 1.25rem;
+        }
+        & .only-desktop {
+            display: none;
+        }
+    }
+}
