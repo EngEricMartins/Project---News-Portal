@@ -52,3 +52,14 @@
  box-shadow: 0px 4px 16px #020617; /* sombra da caixa  */
 
 }
+
+@media (width <= 31.25em) {
+    & .grid-flow-col {
+        grid-auto-flow: row;
+    }
+
+    .grid-col-2 {
+        grid-template-rows: 1fr 1fr;
+    }
+  
+}

@@ -28,6 +28,7 @@ body {
   color: var(--text-color-primary);
   background-color: var(--bg-color);
   font-family: var(--font-family);
+  
 }
 
 a {
@@ -51,7 +52,7 @@ img {
   margin-inline: auto;
 
   @media (width <= 31.25em) {
-    max-width: 22.5rem;
+    padding-inline: 1rem;
   }
 }
 
@@ -69,4 +70,18 @@ main {
   "feactured feactured"
   "weekly weekly"
   "ai aside";
+}
+
+body {
+  @media (width <= 31.25em) {
+    max-width: 31.25em;
+    display: inline-block;
+    align-content: center;
+  }
+}
+* {
+  @media (width <= 31.25em) {
+    max-width: 31.25em;
+    margin-inline: auto;
+  }
 }

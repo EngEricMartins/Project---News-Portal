@@ -23,12 +23,33 @@
 
 @media (width <= 31.25em) {
     header {
+        max-width: 31.25em;
         & #logo {
             width: 6.25rem;
             height: 1.25rem;
         }
         & .only-desktop {
             display: none;
+        }
+
+        & #primary {
+            display: flex;
+            & div:nth-child(1) {
+                justify-self: start;
+                margin-left: 0;
+            }
+            & div:nth-child(2) {
+                justify-self: center;
+            }
+            & div:nth-child(3) {
+                justify-self: end;
+                margin-right: 0;
+            }
+        }
+        & #secundary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
     }
 }
