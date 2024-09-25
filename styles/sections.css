@@ -115,11 +115,6 @@ main {
 
         & > div {
             grid-template-columns: 1fr;
-
-            & img {
-                width: auto;
-                height: 200px;
-            }
         }
       }
 
