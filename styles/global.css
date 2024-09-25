@@ -53,6 +53,7 @@ img {
 
   @media (width <= 31.25em) {
     padding-inline: 1rem;
+    max-width: 31.25em;
   }
 }
 
@@ -72,6 +73,17 @@ main {
   "ai aside";
 }
 
+:root {
+  @media (width <=31.25em) {
+    --h1: 800 12px/135% var(--font-family);
+  --h2: 800 8px/140% var(--font-family);
+  --h3: 800 7px/140% var(--font-family);
+  --text-span: 600 7px/145% var(--font-family);
+  --text: 400 8px/140% var(--font-family);
+  --text-sm: 400 7px/160% var(--font-family);
+  }
+}
+
 body {
   @media (width <= 31.25em) {
     max-width: 31.25em;
@@ -83,5 +95,19 @@ body {
   @media (width <= 31.25em) {
     max-width: 31.25em;
     margin-inline: auto;
+  }
+}
+main {
+  @media (width <= 31.25em) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "feactured"
+    "weekly"
+    "ai"
+    "aside";
+
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-block: 0px;
   }
 }

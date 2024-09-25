@@ -107,3 +107,24 @@ section header {
 aside {
     grid-area: aside;
 }
+
+main {
+    @media (width <= 31.25em) {
+      & #feactured {
+        grid-auto-flow: row;
+
+        & #img-01 {
+            height: 416px;
+        }
+
+        & img {
+            width: 328px;
+        }
+
+        & > div {
+            grid-template-columns: 1fr;
+        }
+      }
+    }
+
+}
